@@ -69,6 +69,6 @@ app.get("/productData",async (req,res)=>{
 });
 
 
-app.listen(4000,()=>{
+app.listen(5000,()=>{
     console.log("Backend is running on port 4000");
 })
