@@ -68,7 +68,13 @@ app.get("/productData",async (req,res)=>{
     res.json(arr);
 });
 
+app.post("/updateCart",(req,res)=>{
+    const {productID}=req.body;
+    const collection=UserconnectDB.collection("User-info");
+    
+})
+
 
 app.listen(5000,()=>{
-    console.log("Backend is running on port 4000");
+    console.log("Backend is running on port 5000");
 })
